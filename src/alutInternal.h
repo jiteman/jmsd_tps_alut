@@ -29,7 +29,7 @@ typedef uint16_t UInt16LittleEndian;
 typedef int32_t Int32BigEndian;
 typedef uint32_t UInt32LittleEndian;
 
-#if HAVE___ATTRIBUTE__
+#if defined( HAVE___ATTRIBUTE__ )
 #define UNUSED(x) x __attribute__((unused))
 #else
 #define UNUSED(x) x
